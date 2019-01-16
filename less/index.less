@@ -57,3 +57,73 @@ html, body {
     height: 100%;
 }
 
+//  variables
+
+//  mixins
+.center {
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	align-content: center;
+}
+
+.center-text {
+	text-align: center;
+}
+
+//  parametric mixins
+
+//  general styles
+
+.container {
+	max-width: 800px;
+	margin: 50px auto;
+	background: red;
+
+	@media ( max-width: 1024px ) {
+		max-width: 800px;
+	}
+
+	@media ( max-width: 375px ) {
+		width: 375px;
+		margin: 10px;
+	}
+}
+
+header .top-nav {
+	width: 100%;
+
+	nav {
+		display: flex;
+		width: 800px;
+		justify-content: space-around;
+	}
+}
+
+.top-section {
+	display: flex;
+	.center;
+}
+
+.name {
+	width: 50%;
+	.center-text;
+}
+
+.image-span {
+	width: 50%;
+}
+
+.me {
+	height: 300px;
+	width: 300px;
+}
+
+.about-me-section {
+	width: 100%;
+}
+
+.job-history {
+	width: 100%;
+}
+
