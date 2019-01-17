@@ -132,32 +132,24 @@ table {
 }
 html,
 body {
+  font-size: 62.5%;
   height: 100%;
-}
-.center {
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-}
-.center-text {
-  text-align: center;
 }
 .container {
   max-width: 800px;
-  margin: 50px auto;
+  margin: 100px auto;
   background: red;
 }
-@media (max-width: 1024px) {
-  .container {
-    max-width: 800px;
-  }
+.container section {
+  margin: 20px 0;
 }
-@media (max-width: 375px) {
-  .container {
-    width: 375px;
-    margin: 10px;
-  }
+.container section h1 {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+.container section p {
+  font-size: 1.5rem;
+  margin: 20px 0;
 }
 header .top-nav {
   width: 100%;
@@ -190,4 +182,12 @@ header .top-nav nav {
 }
 .job-history {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.job-history h1 {
+  width: 100%;
+}
+.job-history .job-div {
+  width: 25%;
 }
